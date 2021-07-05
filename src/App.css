@@ -1,0 +1,87 @@
+/*All Major Components CSS start*/
+body{
+    background: #fcba03;
+}
+.btn{
+    width: 160px;
+    margin: 15px;
+    color: #fff;
+}
+.btn:hover{
+    width: 160px;
+    background: #fcba03;
+    margin: 15px;
+}
+/*END!!!!*/
+
+/*Quick Donate Button CSS start*/
+.quick_donate{
+    background: #000;
+    color: #fff;
+    justify-content: space-between;
+    padding: 0px 100px 0px 100px;
+}
+.donate_button{
+    background: #fff;
+    border-style: none;
+}
+/*END!!!!*/
+
+/*Navigation bar CSS start*/
+.my_navbar{
+    background: #fcba03;
+    height: 80px;
+}
+.navbar-nav a {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 15px;
+    width: 160px;
+    text-align: center;
+    margin: 5px;
+}
+.navbar-nav a:hover {
+    color: #000;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 15px;
+    width: 160px;
+    text-align: center;
+    border-radius: 35px;
+    height: 50px;
+    margin: 5px;
+}
+.navbar-nav a.active {
+    color: #000;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 15px;
+    width: 160px;
+    text-align: center;
+    border-radius: 35px;
+    height: 50px;
+    margin: 5px;
+}
+/*END!!!!*/
+
+/*Banner CSS start*/
+.carousel-item{
+    max-height: 500px;
+}
+.carousel-item div{
+    position: absolute ;
+    top: 150px;
+    left: 150px;
+    color: #fff;
+    width: 60%;
+}
+/*.carousel-item img{
+}*/
+/*END!!!!*/
+
+/*Tablets CSS start*/
+.tablet{
+    background: #fcba07;
+}
+/*END!!!!*/
