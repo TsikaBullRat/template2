@@ -11,7 +11,7 @@ function App() {
     <div >
       <Quick_donate />
       <Navigation />
-      {/*<Banner />*/}
+      <Banner />
       <Tablets />
       <TextBox
         headline="About Us"
