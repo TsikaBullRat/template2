@@ -10,10 +10,18 @@ export const Navigation = () => {
             </button>
             <div className="collapse navbar-collapse flex-row-reverse" id="navbarContent">
                 <div className="navbar-nav">
-                    <a href="#banner" className="nav-item  active">Home</a>
-                    <a href="#aboutus" className="nav-item">About Us</a>
-                    <a href="#ourimapcts" className="nav-item">Our Impacts</a>
-                    <a href="#footer" className="nav-item">Conatacts</a>
+                    <a href="#banner">
+                        <span className="nav-item">Home</span>
+                    </a>
+                    <a href="#aboutus">
+                    <span className="nav-item">About Us</span>
+                    </a>
+                    <a href="#ourimapcts">
+                    <span className="nav-item">Our Impacts</span>
+                    </a>
+                    <a href="#footer">
+                    <span className="nav-item">Conatacts</span>
+                    </a>
                 </div>
             </div>
         </nav>

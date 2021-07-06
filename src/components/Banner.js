@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 export const Banner = () => {
     
     return (
-        <div id="Indicators" className="carousel slide" data-ride="carousel">
+        <div id="Indicators" className="carousel slide" data-ride="carousel" id="banner">
             <ol className="carousel-indicators">
                 <li data-target="#Indicators" data-slide-to="0" className="active"></li>
                 <li data-target="#Indicators" data-slide-to="1"></li>
