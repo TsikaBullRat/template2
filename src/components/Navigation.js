@@ -17,7 +17,7 @@ export const Navigation = () => {
                     <span className="nav-item">About Us</span>
                     </a>
                     <a href="#ourimapcts">
-                    <span className="nav-item">Our Impacts</span>
+                    <span className="nav-item">Galleries</span>
                     </a>
                     <a href="#footer">
                     <span className="nav-item">Conatacts</span>
