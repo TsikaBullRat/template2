@@ -1,9 +1,10 @@
 
+
 export const Navigation = () => {
     return (
         <nav className="row navbar navbar-expand-lg navbar-light">
             <a href="#banner" className="navbar-brand">
-                <h1>Logo</h1>
+                <h1>Big Brothers United</h1>
             </a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -14,13 +15,13 @@ export const Navigation = () => {
                         <span className="nav-item">Home</span>
                     </a>
                     <a href="#aboutus">
-                    <span className="nav-item">About Us</span>
+                        <span className="nav-item">About Us</span>
                     </a>
-                    <a href="#ourimapcts">
-                    <span className="nav-item">Galleries</span>
+                    <a href="#gallery">
+                        <span className="nav-item">Gallery</span>
                     </a>
                     <a href="#footer">
-                    <span className="nav-item">Conatacts</span>
+                        <span className="nav-item">Conatacts</span>
                     </a>
                 </div>
             </div>
