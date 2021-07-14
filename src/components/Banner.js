@@ -1,11 +1,12 @@
 /*import React, { Component } from 'react';*/
-import joyfull from '../assets/joyfull_children.jpg';
-import cancer from '../assets/national-cancer-institute.jpg';
-import sitting from '../assets/sitting-children.jpg';
+import image1 from '../assets/image1.jpeg';
+import awaken from '../assets/image3.jpeg';
+import gunners from '../assets/image4.jpeg';
 import { Link } from 'react-router-dom';
+//import Loader from 'react-spinners/HashLoader';
+//import React, { useState, useEffect } from 'react'
 
 export const Banner = () => {
-    
     return (
         <div id="Indicators" className="carousel slide" data-ride="carousel" id="banner">
             <ol className="carousel-indicators">
@@ -17,29 +18,24 @@ export const Banner = () => {
                 <div className="carousel-item active">
                     <div>
                         <h1>What we do</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <button className="btn">Make a difference</button>
+                        <p>Big Brothers United is a Non Profit Organization that has been established to combat the scourge of alcohol and drug and abuse in Beaconsfield and Green point in particular.</p>
                         <a href="#aboutus" className="btn">Read more</a>
                     </div>
-                    <img src={joyfull} className="d-lg-block w-100" />
+                    <img src={image1} className="d-lg-block w-100" />
                 </div>
                 <div className="carousel-item">
                     <div>
-                        <h1>How we move</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <button className="btn">Give a hand</button>
-                        <a href="#ourimpacts" className="btn">Our impacts</a>
+                        <h1>Awaken Young People</h1>
+                        <p>On Friday Big Brothers United hosted a youth awakening workshop in Beaconsfield in order to educate the youth on the danger of drug and alcohol.</p>
                     </div>
-                    <img src={cancer} className="d-lg-block w-100" />
+                    <img src={awaken} className="d-lg-block w-100" />
                 </div>
                 <div className="carousel-item">
                     <div>
-                        <h1>Talk to us</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <button className="btn">Speak now</button>
-                        <a href="#footer" className="btn">Contact list</a>
+                        <h1>Whoza Gunners</h1>
+                        <p>A young boys’ soccer team that is a product of Big Brothers United was accordingly launched; Beaconsfield Gunners FC</p>
                     </div>
-                    <img src={sitting} className="d-lg-block w-100" />
+                    <img src={gunners} className="d-lg-block w-100" />
                 </div>
             </div>
             <a className="carousel-control-prev" href="#Indicators" role="button" data-slide="prev">
@@ -53,71 +49,3 @@ export const Banner = () => {
         </div>
     )
 }
-
-/*class Banner extends Component {
-    Index= 1;
-    showSlides(Index);
-
-    slideControl(i){
-        this.showSlides(this.Index += i);
-    }
-
-    slideCurrent(i){
-        this.showSlides(this.Index = i);
-    }
-
-    showSlides(i){
-        var x;
-        var slide = document.getElementsByClassName("")
-    }
-    render() {
-        return (
-            <div id="Indicators" className="row carousel slide" data-ride="carousel">
-                <ol className="carousel-indicators">
-                    <li data-target="#Indicators" data-slide-to="0" className="active"></li>
-                    <li data-target="#Indicators" data-slide-to="1"></li>
-                    <li data-target="#Indicators" data-slide-to="2"></li>
-                </ol>
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <div>
-                            <h1>Hell World!!!!!</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <Link exact to="/" className="btn">Press Me</Link>
-                            <Link exact to="/" className="btn">Press Me</Link>
-                        </div>
-                        <img src={joyfull} className="d-lg-block w-100" />
-                    </div>
-                    <div className="carousel-item">
-                        <div>
-                            <h1>Hell World!!!!!</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <Link exact to="/" className="btn">Press Me</Link>
-                            <Link exact to="/" className="btn">Press Me</Link>
-                        </div>
-                        <img src={cancer} className="d-lg-block w-100" />
-                    </div>
-                    <div className="carousel-item">
-                        <div>
-                            <h1>Hell World!!!!!</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <Link exact to="/" className="btn">Press Me</Link>
-                            <Link exact to="/" className="btn">Press Me</Link>
-                        </div>
-                        <img src={sitting} className="d-lg-block w-100" />
-                    </div>
-                </div>
-                <a className="carousel-control-prev" href="#Indicators" role="button" data-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true" />
-                    <span className="sr-only">Previous</span>
-                </a>
-                <a className="carousel-control-next" href="#Indicators" role="button" data-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true" />
-                    <span className="sr-only">Next</span>
-                </a>
-            </div>
-        )
-    }
-}
-
-export default Banner;*/

@@ -5,21 +5,21 @@ import { Banner } from './components/Banner';
 import { Tablets } from "./components/Tablets";
 import {TextBox} from './components/TextBox';
 import { Footer } from './components/Footer';
-import Clone from './components/Clone'
+import {Gallery} from './components/Gallery';
 
 function App() {
   return (
     <div>
       <Quick_donate />
-      <Navigation />
+       <Navigation />
       <Banner />
       <Tablets />
       <TextBox
         headline="About Us"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus feugiat in ante metus dictum. Maecenas sed enim ut sem viverra aliquet. Ut etiam sit amet nisl purus in. Amet justo donec enim diam vulputate ut pharetra. Erat nam at lectus urna. Dictum sit amet justo donec enim diam vulputate ut pharetra. Iaculis urna id volutpat lacus. Feugiat in fermentum posuere urna nec. Pellentesque dignissim enim sit amet venenatis urna. Faucibus a pellentesque sit amet porttitor eget dolor. Vestibulum lorem sed risus ultricies tristique nulla. Et pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Consectetur adipiscing elit ut aliquam purus. Nunc faucibus a pellentesque sit amet porttitor eget dolor morbi. Ultrices sagittis orci a scelerisque purus semper eget duis at. Amet facilisis magna etiam tempor orci eu. Orci nulla pellentesque dignissim enim sit amet venenatis. Nec nam aliquam sem et tortor consequat. Malesuada fames ac turpis egestas maecenas pharetra."
+        text="Big Brothers United is a Non Profit Organization that has been established to combat the scourge of alcohol and drug and abuse in Beaconsfield and Green point in particular. The founder of this organization Mr Tebogo C Moroka said that the youth in these two areas find themselves in the crossfire between two forces that wrestle over the unused time that that is at the disposal of the youth. He said that there are no facilities that can keep the youth away from the streets and this results in the force of evil winning the wrestle because there are more alcohol facilities and drug sales. He said the youth in these areas need help and they need it urgently. As Big Brothers United, we try to create activities for the youth to keep them out of the streets; that is how we will fight the drug and alcohol abuse that is happening in our area."
         configure="about"
       />
-      {/*<Clone config="about"/>*/}
+      <Gallery/>
       <Footer />
     </div>
   );

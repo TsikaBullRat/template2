@@ -1,0 +1,359 @@
+/*All Major Components CSS start*/
+input{display: none;}
+.btn{
+    width: 160px;
+    margin: 15px;
+    background: #fa8701;
+    color: #fff;
+}
+.btn:hover{
+    width: 160px;
+    background: #fff;
+    margin: 15px;
+}
+/*END!!!!*/
+
+/*Quick Donate Button CSS start*/
+.quick_donate{
+    display: flex;
+    background: #000;
+    color: #fff;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px 0px 100px;
+}
+.donate_button{
+    background: #fff;
+    border-style: none;
+    height: 40px;
+}
+.donate_button:hover{
+    background: #fa8701;
+    color: #fff;
+    border-style: none;
+    height: 40px;
+}
+/*END!!!!*/
+
+/*Navigation bar CSS start*/
+.navbar{
+    position: sticky;
+    top: 0;
+    background: #fa8701;
+    height: auto;
+    z-index: 1;
+}
+.navbar-nav a{
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 15px;
+    width: 160px;
+    text-align: center;
+    margin: 5px;
+}
+.navbar-nav a:hover {
+    color: #000;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 15px;
+    width: 160px;
+    text-align: center;
+    border-radius: 35px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+}
+/*END!!!!*/
+
+/*Banner CSS start*/
+.carousel-item{
+    max-height: 500px;
+    align-items: center;
+}
+.carousel-item div{
+    position: absolute ;
+    top: 150px;
+    left: 150px;
+    color: #fff;
+    width: 60%;
+}
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 5%;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+/*END!!!!*/
+
+/*Tablets CSS start*/
+.tablet{
+    background: #e6e6e6;
+    border-radius: 25px;
+}
+.tablet:hover{
+    background: #fa8701;
+    color: #fff;
+}
+/*END!!!!*/
+
+/*Text Box CSS start*/
+.text_box{
+    display: flex;
+    align-self: center;
+    margin: 50px 0px 50px 0px;
+    width: 100%;
+    height: auto;
+    color: #000;
+    border-color: #fa8701;
+    background:#e6e6e6;
+}
+/*END!!!!*/
+
+/*Footer CSS start*/
+#footer{
+    display: flex;
+    background: #fa8701;
+    height: auto;
+    width: 100%;
+}
+/*END!!!!*/
+
+/*Gallery CSS start*/
+#gallery{
+    padding: 0 20px;
+}
+label{
+    display: inline-block;
+    height: 100%;
+    padding: 0 20px;
+    margin: 0 20px;
+    line-height: 60px;
+    text-align: center;
+    color: #000;
+    cursor: pointer;
+}
+label:hover{
+    color: #fff;
+    background: #fa8701;
+}
+.top-content{
+    background: #e6e6e6;
+    width: 90%;
+    margin: 0 auto 20px auto;
+    height: 60px;
+    display: flex;
+    text-align: center;
+}
+.photo-gallery{
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.pic{
+    height: 230px;
+    position: relative;
+    cursor: pointer;
+}
+.pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.pic::before{
+    content: "PHOTO-GALLERY";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 25px;
+    opacity: 0;
+}
+.pic:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    opacity: .4;
+    border-radius: 10px;
+}
+.pic:hover::after{
+    height: 100%;
+}
+.pic:hover::before{
+    opacity: 1;
+    z-index: 1;
+}
+#check1:checked ~ .row .photo-gallery .pic{
+    opacity: 1;
+    transform: scale(1);
+}
+
+#check2:checked ~ .row .photo-gallery .nature{
+    position: relative;
+    opacity: 1;
+    transform: scale(1);
+}
+#check2:checked ~ .row .photo-gallery .love,
+#check2:checked ~ .row .photo-gallery .children{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+}
+#check3:checked ~ .row .photo-gallery .love{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+
+#check3:checked ~ .row .photo-gallery .nature,
+#check3:checked ~ .row .photo-gallery .children{
+    position: absolute;
+    opacity: 0;
+    transform: scale(0);
+}
+#check4:checked ~ .row .photo-gallery .children{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+
+#check4:checked ~ .row .photo-gallery .love,
+#check4:checked ~ .row .photo-gallery .nature{
+    position: absolute;
+    opacity: 0;
+    transform: scale(0);
+}
+/*END!!!!*/
+
+@media (max-width: 1024px ){
+    /*Text Box CSS start*/
+    .text_box_w{
+        margin: 50px 10px 50px 10px;
+        width: 90%;
+        height: 300px;
+        border-color: #fa8701;
+        border-radius: 25px;
+        background: #fff;
+    }
+    .text_box_r{
+        align-self: center;
+        margin: 50px 10px 50px 10px;
+        width: 90%;
+        height: 300px;
+        border-color: #fff;
+        border-radius: 25px;
+        background: #fa8701;
+    }
+    /*END!!!!*/
+
+    /*Quick Donate Button CSS start*/
+    .quick_donate{
+        display: flex;
+        background: #000;
+        color: #fff;
+        height: 60px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 0px 0px 0px;
+    }
+    .donate_button{
+        background: #fff;
+        border-style: none;
+        height: 40px;
+    }
+    .donate_button:hover{
+        background: #fa8701;
+        color: #fff;
+        border-style: none;
+        height: 40px;
+    }
+    /*END!!!!*/
+
+    /*Gallery CSS START*/
+    .photo-gallery{
+        width: 90%;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 90%;
+        grid-gap: 20px;
+    }
+    label{
+        display: inline-block;
+        width: 25%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        line-height: 60px;
+        text-align: center;
+        color: #000;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    label:hover{
+        width: 25%;
+        color: #fff;
+        background: #fa8701;
+        font-size: 15px;
+    }
+    .top-content{
+        background: #e6e6e6;
+        width: 90%;
+        /*margin: 0 auto 20px auto;*/
+        height: 60px;
+        display: flex;
+        text-align: center;
+    }
+    /*END!!!!*/
+
+    .navbar-nav a{
+        color: #fff;
+        text-decoration: none;
+        background-color: transparent;
+        padding: 15px;
+        width: 90%;
+        text-align: center;
+        margin-left: 20px;
+    }
+    .navbar-nav a:hover {
+        color: #000;
+        text-decoration: none;
+        background-color: #fff;
+        padding: 15px;
+        width: 90%;
+        text-align: center;
+        border-radius: 35px;
+        height: 50px;
+        margin-left: 20px;
+    }
+/*END!!!!*/
+.carousel-item{
+    max-height: 600px;
+    align-items: center;
+}
+.carousel-item div{
+    position: absolute ;
+    top: 0px;
+    left: 100px;
+    color: #fff;
+    width: 60%;
+}
+}
