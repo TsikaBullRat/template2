@@ -1,39 +1,43 @@
-import school_kids from '../temp_assets/school_kids.jpg';
-import studying_kids from '../temp_assets/studying_kids.jpg';
-import nature from '../temp_assets/nature.jpg';
-import marriage from '../temp_assets/marriage.jpg';
-import peace from '../temp_assets/peace.jpg';
+import image1 from '../assets/image1.jpeg';
+import image2 from '../assets/image2.jpeg';
+import image3 from '../assets/image3.jpeg';
+import image4 from '../assets/image4.jpeg';
+import image5 from '../assets/image5.jpeg';
+import image6 from '../assets/image6.jpeg';
 
 export const Gallery = () =>{
     return(
-      <div id="gallery">
+      <div id="gallery" className="container">
         <input type="radio" name="Photos" id="check1"/>
         <input type="radio" name="Photos" id="check2"/>
         <input type="radio" name="Photos" id="check3"/>
         <input type="radio" name="Photos" id="check4"/>
 
         <div className="row text-center">
-          <div className="top-content col-sm-12">
-            <label for="check1">All Photos</label>
-            <label for="check2">Nature</label>
-            <label for="check3">Love</label>
-            <label for="check4">Children</label>
+          <div className="top-content col-sm-12 col-lg-12">
+            <label htmlFor="check1">All</label>
+            <label htmlFor="check2">Workshops</label>
+            <label htmlFor="check3">Activities</label>
+            <label htmlFor="check4">Community</label>
           </div>
           <div className="photo-gallery">
-            <div className="pic children col-sm-12">
-              <img src={school_kids}/>
+            <div className="pic workshop col-sm-12">
+              <img src={image1}/>
             </div>
-            <div className="pic children col-sm-12">
-              <img src={studying_kids}/>
+            <div className="pic workshop col-sm-12">
+              <img src={image2}/>
             </div>
-            <div className="pic nature col-sm-12">
-              <img src={nature}/>
+            <div className="pic workshop col-sm-12">
+              <img src={image3}/>
             </div>
-            <div className="pic love col-sm-12">
-              <img src={marriage}/>
+            <div className="pic activities col-sm-12">
+              <img src={image4}/>
             </div>
-            <div className="pic love col-sm-12">
-              <img src={peace}/>
+            <div className="pic community col-sm-12">
+              <img src={image5}/>
+            </div>
+            <div className="pic community col-sm-12">
+              <img src={image6}/>
             </div>
           </div>
         </div>

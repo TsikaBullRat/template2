@@ -68,34 +68,18 @@ input{display: none;}
 /*END!!!!*/
 
 /*Banner CSS start*/
-.carousel-item{
-    max-height: 500px;
-    align-items: center;
-}
-.carousel-item div{
-    position: absolute ;
-    top: 150px;
-    left: 150px;
+.jumbotron{
+    background-image: url("./assets/image1.jpeg");
+    background-size: 100%;
+    background-position-y: center;
+    background-repeat:no-repeat;
+    background-color: #fff;
     color: #fff;
-    width: 60%;
-}
-.carousel-control-next, .carousel-control-prev {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    z-index: 1;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 5%;
-    color: #fff;
-    text-align: center;
-    opacity: .5;
-    transition: opacity .15s ease;
-}
+    height: 600px;
+    padding-top: 150px;
+    padding-left: 80px;
+    border-radius: 0%;
+  }
 /*END!!!!*/
 
 /*Tablets CSS start*/
@@ -111,7 +95,6 @@ input{display: none;}
 
 /*Text Box CSS start*/
 .text_box{
-    display: flex;
     align-self: center;
     margin: 50px 0px 50px 0px;
     width: 100%;
@@ -127,7 +110,22 @@ input{display: none;}
     display: flex;
     background: #fa8701;
     height: auto;
-    width: 100%;
+    width: 101%;
+}
+/*.foot_box{
+    margin-top: 150px;
+}*/
+.mapouter{
+    position:static;
+    text-align:right;
+    height:250px;
+    width:500px;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:250px;
+    width:500px;
 }
 /*END!!!!*/
 
@@ -151,17 +149,21 @@ label:hover{
 }
 .top-content{
     background: #e6e6e6;
-    width: 90%;
+    width: 100%;
     margin: 0 auto 20px auto;
     height: 60px;
     display: flex;
     text-align: center;
 }
+.top-content label{
+    padding: 0 10px;
+    margin: 0 5px;
+}
 .photo-gallery{
     width: 90%;
     margin: 20px auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
 }
 .pic{
@@ -175,7 +177,7 @@ label:hover{
     border-radius: 10px;
 }
 .pic::before{
-    content: "PHOTO-GALLERY";
+    content: "Big Brothers United";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -196,7 +198,9 @@ label:hover{
     border-radius: 10px;
 }
 .pic:hover::after{
+    width: 90%;
     height: 100%;
+    margin-left: 16px;
 }
 .pic:hover::before{
     opacity: 1;
@@ -207,37 +211,37 @@ label:hover{
     transform: scale(1);
 }
 
-#check2:checked ~ .row .photo-gallery .nature{
+#check2:checked ~ .row .photo-gallery .workshop{
     position: relative;
     opacity: 1;
     transform: scale(1);
 }
-#check2:checked ~ .row .photo-gallery .love,
-#check2:checked ~ .row .photo-gallery .children{
+#check2:checked ~ .row .photo-gallery .activities,
+#check2:checked ~ .row .photo-gallery .community{
     opacity: 0;
     transform: scale(0);
     position: absolute;
 }
-#check3:checked ~ .row .photo-gallery .love{
+#check3:checked ~ .row .photo-gallery .activities{
     opacity: 1;
     transform: scale(1);
     position: relative;
 }
 
-#check3:checked ~ .row .photo-gallery .nature,
-#check3:checked ~ .row .photo-gallery .children{
+#check3:checked ~ .row .photo-gallery .workshop,
+#check3:checked ~ .row .photo-gallery .community{
     position: absolute;
     opacity: 0;
     transform: scale(0);
 }
-#check4:checked ~ .row .photo-gallery .children{
+#check4:checked ~ .row .photo-gallery .community{
     opacity: 1;
     transform: scale(1);
     position: relative;
 }
 
-#check4:checked ~ .row .photo-gallery .love,
-#check4:checked ~ .row .photo-gallery .nature{
+#check4:checked ~ .row .photo-gallery .activities,
+#check4:checked ~ .row .photo-gallery .workshop{
     position: absolute;
     opacity: 0;
     transform: scale(0);
@@ -245,7 +249,7 @@ label:hover{
 /*END!!!!*/
 
 @media (max-width: 1024px ){
-    /*Text Box CSS start*/
+/*Text Box CSS start*/
     .text_box_w{
         margin: 50px 10px 50px 10px;
         width: 90%;
@@ -263,9 +267,9 @@ label:hover{
         border-radius: 25px;
         background: #fa8701;
     }
-    /*END!!!!*/
+/*END!!!!*/
 
-    /*Quick Donate Button CSS start*/
+/*Quick Donate Button CSS start*/
     .quick_donate{
         display: flex;
         background: #000;
@@ -286,9 +290,9 @@ label:hover{
         border-style: none;
         height: 40px;
     }
-    /*END!!!!*/
+/*END!!!!*/
 
-    /*Gallery CSS START*/
+/*Gallery CSS START*/
     .photo-gallery{
         width: 90%;
         margin: 20px auto;
@@ -322,7 +326,7 @@ label:hover{
         display: flex;
         text-align: center;
     }
-    /*END!!!!*/
+/*END!!!!*/
 
     .navbar-nav a{
         color: #fff;
@@ -344,16 +348,35 @@ label:hover{
         height: 50px;
         margin-left: 20px;
     }
+    .navbar h1{
+        font-size: 30px;
+    }
 /*END!!!!*/
-.carousel-item{
-    max-height: 600px;
-    align-items: center;
+
+/*Banner CSS STARTS*/
+    .jumbotron{
+        background-image: url("./assets/image1.jpeg");
+        background-size: auto 100%;
+        background-position-x: center;
+        background-repeat:no-repeat;
+        background-color: #fff;
+        color: #fff;
+        width: 110%;
+        height: 700px;
+        padding-top: 150px;
+        padding-left: 80px;
+        border-radius: 0%;
+  }
+/*END!!!!*/
+/*Footer CSS start*/
+#footer{
+    display: flex;
+    background: #fa8701;
+    height: auto;
+    width: 105%;
 }
-.carousel-item div{
-    position: absolute ;
-    top: 0px;
-    left: 100px;
-    color: #fff;
-    width: 60%;
+.foot_box{
+    margin-top: 0px;
 }
+/*END!!!!*/
 }

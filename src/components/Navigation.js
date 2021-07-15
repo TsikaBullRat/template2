@@ -3,7 +3,7 @@
 export const Navigation = () => {
     return (
         <nav className="row navbar navbar-expand-lg navbar-light">
-            <a href="#banner" className="navbar-brand">
+            <a href="#banner" className="navbar-brand ml-3">
                 <h1>Big Brothers United</h1>
             </a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
