@@ -16,7 +16,7 @@ export const TextBox = props => {
             </div>
             <div className="row">
                 <div className="row justify-content-center mt-5 mb-5">
-                    <h1 style={{ color: '#fa8701' }} className="col-lg-12 text-center">Our Month</h1>
+                    <h1 style={{ color: '#fa8701' }} className="col-lg-12 text-center">Monthly Programmes</h1>
                     <div className="col-lg-3 col-md-6 col-sm-12 text-center">
                         {/*<i class="bi bi-emoji-smile" style={{ fontSize: 100, color: '#fa8701' }}></i>*/}
                         <GiAcousticMegaphone size='150px' color='#fa8701' />

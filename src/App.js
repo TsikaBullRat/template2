@@ -10,7 +10,6 @@ import {Accomplishments} from './components/Accomplishments'
 function App() {
   return (
     <div>
-      {/*<Messager />*/}
       <Navigation />
       <Banner />
       <Tablets />
